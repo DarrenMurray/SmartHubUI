@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('home-hub-ui App', () => {
+describe('smart-hub-ui App', () => {
   let page: AppPage;
 
   beforeEach(() => {
