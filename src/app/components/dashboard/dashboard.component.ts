@@ -10,7 +10,7 @@ import { MotionSensor } from '../../models/MotionSensor';
 })
 export class DashboardComponent implements OnInit {
 
-  private motionSensor:any
+  public motionSensor:any
 
   constructor(private http: HttpClient) { }
 
