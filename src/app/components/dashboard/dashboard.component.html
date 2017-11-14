@@ -1,3 +1,47 @@
-<h1>
-   Last Active: {{motionSensor.lastActive}}  
-</h1>
+
+
+<div class="mx-auto" style="width: 800px; padding-bottom:30px">
+  <h1 class="text-center">Sensors</h1>
+
+</div>
+<div class="mx-auto" style="width: 800px;">
+  
+  <!--List of All Sensors-->
+<!-- Cards Displaying Blog snippets -->
+<div class="card-deck"> 
+  <!-- <div *ngFor="let sensor of sensors"> -->
+        <div class="card text-white bg-dark mb-3" style="max-width: 20rem;">
+              <img class="card-img-top" src="../../../assets/motion.png" alt="Blog">
+              <div class="card-body">
+                <h4 class="card-title">{{ motionSensor.deviceName }}</h4>
+                <p class="card-text">Location: {{ motionSensor.location }}</p>                                
+                <p class="card-text">Battery: {{ motionSensor.battery }}</p>
+                <p class="card-text">Temp: {{ motionSensor.temperature }}</p>                
+                <p class="card-text"><small class="text-muted">Last Active {{ motionSensor.lastActive }}</small></p>
+              </div>
+            </div>
+              <!-- Mock Sensors! -->
+            <div class="card text-white bg-dark mb-3" style="max-width: 20rem;">
+              <img class="card-img-top" src="../../../assets/door.png" alt="Blog">
+              <div class="card-body">
+                <h4 class="card-title">Door Open/Closed</h4>
+                <p class="card-text">Location: {{ motionSensor.location }}</p>                                
+                <p class="card-text">Battery: {{ motionSensor.battery }}</p>
+                <p class="card-text">Temp: {{ motionSensor.temperature }}</p>                
+                <p class="card-text"><small class="text-muted">Last Active {{ motionSensor.lastActive }}</small></p>
+              </div>
+            </div>
+            <div class="card text-white bg-dark mb-3" style="max-width: 20rem;">
+              <img class="card-img-top" src="../../../assets/material2.png" alt="Blog">
+              <div class="card-body">
+                <h4 class="card-title">Kettle</h4>
+                <p class="card-text">Location: {{ motionSensor.location }}</p>                                
+                <p class="card-text">Battery: {{ motionSensor.battery }}</p>
+                <p class="card-text"><small class="text-muted">Last Active {{ motionSensor.lastActive }}</small></p>
+              </div>
+            </div>
+          <!-- </div> -->
+      </div>
+            
+
+</div>
