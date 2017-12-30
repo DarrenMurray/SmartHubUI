@@ -13,7 +13,7 @@ export class FitnessComponent implements OnInit {
   constructor(private http: HttpClient) { }
 
   ngOnInit() {
-    this.http.get('https://home-hub-59831.herokuapp.com/api/fitness/steps').subscribe(data => {
+    this.http.get('https://http://hub.homehubserver.com:8080/api/fitness/steps').subscribe(data => {
       // Read the result field from the JSON response.
       this.steps = data;
 
