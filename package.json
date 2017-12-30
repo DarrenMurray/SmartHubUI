@@ -32,7 +32,7 @@
     "@angular/cli": "1.4.4",
     "@angular/compiler-cli": "*",
     "@angular/language-service": "*",
-    "bootstrap": "*",
+    "bootstrap": "4.0.0-beta.2",
     "font-awesome": "^4.7.0",
     "jquery": "^3.2.1",
     "popper.js": "^1.12.6"
