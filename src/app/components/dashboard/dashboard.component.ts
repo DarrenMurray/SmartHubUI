@@ -15,7 +15,7 @@ export class DashboardComponent implements OnInit {
   constructor(private http: HttpClient) { }
 
   ngOnInit() {
-    this.http.get('https://home-hub-59831.herokuapp.com/api/sensor/MotionSensor').subscribe(data => {
+    this.http.get('http://hub.homehubserver.com:8080/api/sensor/MotionSensor').subscribe(data => {
       // Read the result field from the JSON response.
       this.motionSensor = new MotionSensor(data);
 

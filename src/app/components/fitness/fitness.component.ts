@@ -13,7 +13,7 @@ export class FitnessComponent implements OnInit {
   constructor(private http: HttpClient) { }
 
   ngOnInit() {
-    this.http.get('https://hub.homehubserver.com:8443/api/fitness/steps').subscribe(data => {
+    this.http.get('http://hub.homehubserver.com:8080/api/fitness/steps').subscribe(data => {
       // Read the result field from the JSON response.
       this.steps = data;
 
@@ -21,3 +21,4 @@ export class FitnessComponent implements OnInit {
   }
 
 }
+
